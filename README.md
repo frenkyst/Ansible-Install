@@ -101,6 +101,7 @@
 
        sudo ansible-playbook user.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191567077-5a8e5ce0-1af2-403c-ac9e-f8fe38f60f47.png)
 
 
 
