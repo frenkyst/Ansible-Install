@@ -81,7 +81,7 @@
          - name: Change Password Authentication
            lineinfile:
              path: /etc/ssh/sshd_config
-             search_string: 'PasswordAuthentication no'
+             regexp: 'PasswordAuthentication no'
              line: PasswordAuthentication yes
 
          - name: Restart SSH Service
