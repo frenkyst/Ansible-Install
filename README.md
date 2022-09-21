@@ -1,1 +1,82 @@
 # Ansible-Install
+
+
+1. Update sistem terlebih dulu
+
+       sudo apt update
+       sudo apt upgrade
+
+   ![image](https://user-images.githubusercontent.com/40049149/191546792-a9ee4267-e288-425e-8168-ffb778bc2f65.png)
+
+2. Jalankan perintah berikut untuk install ansible
+
+       sudo apt install ansible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
