@@ -43,18 +43,63 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/191552622-043f9fcc-72e5-4e0d-92da-71577c05fccc.png)
 
+7. Cek koneksi
 
+       ansible all -m ping
+       
+       ansible all -i inventory -m ping
 
+   ![image](https://user-images.githubusercontent.com/40049149/191553113-16e45375-28e4-469e-8bc9-0f6211b09060.png)
 
+## Create user
 
+1. Buat file user.yaml
 
+       nano user.yaml
 
+2. Paste ke file user.yaml
 
+       - hosts: all
+         become: true
+         gather_facts: false
+         vars:
+         - username: frenky
+         - password: $6$PbnDyrfjFsL8iISE$xuEhLnDkapwGxNBoxAJdSU5Zeno9NukfL5n9CbUderOe8.UgqitNkyAmDEAtl788rmFpNS4UCxNzBhK2KYv5T.
+         tasks:
 
+         - name: Create user
+           user:
+             name: "{{username}}"
+             password: "{{password}}"
+             groups: sudo
+             state: present
+             shell: /bin/bash
+             system: no
+             createhome: yes
+             home: /home/{{username}}
 
+         - name: Change Password Authentication
+           lineinfile:
+             path: /etc/ssh/sshd_config
+             search_string: 'PasswordAuthentication no'
+             line: PasswordAuthentication yes
 
+         - name: Restart SSH Service
+           service:
+             name: ssh
+             state: restarted
 
+   ![image](https://user-images.githubusercontent.com/40049149/191566414-4d1a6cd1-3919-4a69-8588-4ae3e96143cf.png)
 
+3. Encrypt password jalankan perintah berikut dan masukan password
+
+       mkpasswd --method=sha-512
+
+   ![image](https://user-images.githubusercontent.com/40049149/191561866-4bb68199-610d-42a4-9f49-db7581f91cd6.png)
+
+4. Jalankan
+
+       sudo ansible-playbook user.yaml
 
 
 
