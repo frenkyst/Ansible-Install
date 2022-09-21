@@ -123,16 +123,33 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/191568768-cd4f6d73-641e-476c-b284-65131dda754b.png)
 
+## Nginx Install
 
+1. Buat file nginx.yaml
+       
+       - hosts: all
+         become: true
+         tasks:
+           - name: Update system
+             apt:
+               update_cache: yes
+               upgrade: dist
 
+           - name: Install Nginx
+             apt:
+               name: nginx
+               state: present
+               update_cache: yes
 
+   ![image](https://user-images.githubusercontent.com/40049149/191571182-84303e8e-6027-4203-bfcc-21ee6e46872d.png)
 
+2. Jalankan
 
+       sudo ansible-playbook nginx.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191571602-dc0d7f7d-babe-4f4e-a619-464b4a81487c.png)
 
-
-
-
+   ![image](https://user-images.githubusercontent.com/40049149/191571694-c18cd462-578e-48bf-a850-51bced2b9d10.png)
 
 
 
