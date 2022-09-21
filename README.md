@@ -151,13 +151,56 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/191571694-c18cd462-578e-48bf-a850-51bced2b9d10.png)
 
+## Docker Install
 
+1. Buat file docker.yaml
 
+       - hosts: all
+         become: true
+         tasks:
+           - name: "Update"
+             apt:
+               update_cache: yes
 
+           - name: "Install docker dependencies"
+             apt:
+               name:
+               - ca-certificates
+               - curl
+               - gnupg
+               - lsb-release
 
+           - name: "Add docker GPG key"
+             apt_key:
+               url: https://download.docker.com/linux/ubuntu/gpg
+               state: present
 
+           - name: "Add docker repository"
+             apt_repository:
+               repo: deb https://download.docker.com/linux/ubuntu focal stable
+               state: present
 
+           - name: "Install docker engine"
+             apt:
+               name:
+               - docker-ce
+               - docker-ce-cli
+               - containerd.io
+               - docker-compose-plugin
 
+           # - name: "Bash Execusions"
+           #   shell: exec bash
+
+           - name: "Set docker comand without sudo"
+             shell: sudo usermod -aG docker menther
+
+2. Jalankan
+
+       sudo ansible-playbook docker.yaml
+
+   ![Screenshot from 2022-09-22 00-57-14](https://user-images.githubusercontent.com/40049149/191577634-7ceb63bf-a54e-49e9-8c63-dce3a05f7364.png)
+
+   ![image](https://user-images.githubusercontent.com/40049149/191578158-a1ad561b-e11d-4419-b2b7-53c3ce54ceaa.png)
 
 
 
