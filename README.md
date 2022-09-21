@@ -61,7 +61,7 @@
 
        - hosts: all
          become: true
-         gather_facts: false
+         gather_facts: true
          vars:
          - username: frenky
          - password: $6$PbnDyrfjFsL8iISE$xuEhLnDkapwGxNBoxAJdSU5Zeno9NukfL5n9CbUderOe8.UgqitNkyAmDEAtl788rmFpNS4UCxNzBhK2KYv5T.
@@ -103,12 +103,25 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/191567077-5a8e5ce0-1af2-403c-ac9e-f8fe38f60f47.png)
 
+## Update Sistem
 
+1. Buat file update.yaml
 
+       - hosts: all
+         become: true
+         tasks:
+         - name: update
+           apt:
+             update_cache: yes
+             upgrade: dist
 
+   ![image](https://user-images.githubusercontent.com/40049149/191568578-1f23db57-dbd3-4616-9c99-a2bf5f9aa21f.png)
 
+2. Jalankan 
 
+       sudo ansible-playbook update.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191568768-cd4f6d73-641e-476c-b284-65131dda754b.png)
 
 
 
