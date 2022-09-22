@@ -211,7 +211,7 @@
 
 2. Buat file node-exporter.yaml
 
-   ![Screenshot from 2022-09-22 12-04-43](https://user-images.githubusercontent.com/40049149/191662733-fe5ce1ef-6871-45ad-9a71-a7e327a41157.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191662861-946fc7ed-3e66-4aca-befe-67be18510c9c.png)
    
 3. Jalankan
 
