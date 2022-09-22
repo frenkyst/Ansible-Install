@@ -203,13 +203,19 @@
 
    ![image](https://user-images.githubusercontent.com/40049149/191639960-587272b8-8613-4133-8037-eb98eefd794e.png)
 
+## Node Exporter Install
 
+1. Buat file node-exporter-compose.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191662177-dbce45a1-440e-47e1-8c53-9d9115e0e54d.png)
 
+2. Buat file node-exporter.yaml
 
+   ![Screenshot from 2022-09-22 12-04-43](https://user-images.githubusercontent.com/40049149/191662733-fe5ce1ef-6871-45ad-9a71-a7e327a41157.png)
+   
+3. Jalankan
 
-
-
+       sudo ansible-playbook node-exporter.yaml
 
 
 
