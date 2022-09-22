@@ -239,6 +239,8 @@
        sudo ansible-playbook prometheus-grafana.yaml
 
    ![image](https://user-images.githubusercontent.com/40049149/191684224-c25ceeb9-08e9-478d-afd1-776328e9ebb5.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191684541-465a8998-d894-4c7f-8245-546a39153b8d.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191685014-fe74d30d-2d94-4f9b-975c-ddb7adb72fc2.png)
 
 
 
