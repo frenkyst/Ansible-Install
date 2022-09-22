@@ -211,12 +211,13 @@
 
 2. Buat file node-exporter.yaml
 
-   ![image](https://user-images.githubusercontent.com/40049149/191662861-946fc7ed-3e66-4aca-befe-67be18510c9c.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191663080-86bcb5d2-0b1e-458d-babf-2d8294f0c74a.png)
    
 3. Jalankan
 
        sudo ansible-playbook node-exporter.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191663213-42ad1f86-678e-4fe5-a0ec-a76f9b2d6813.png)
 
 
 
