@@ -200,7 +200,7 @@
 
    ![Screenshot from 2022-09-22 00-57-14](https://user-images.githubusercontent.com/40049149/191577634-7ceb63bf-a54e-49e9-8c63-dce3a05f7364.png)
 
-   ![image](https://user-images.githubusercontent.com/40049149/191578158-a1ad561b-e11d-4419-b2b7-53c3ce54ceaa.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191639960-587272b8-8613-4133-8037-eb98eefd794e.png)
 
 
 
