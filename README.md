@@ -224,17 +224,21 @@
 
 1. Buat file prometheus.yaml
 
-   ![image](https://user-images.githubusercontent.com/40049149/191665737-02f357ca-8da9-4bfd-bde0-67959e19ceb0.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191676819-68885a46-23fa-43dc-ba8a-fc49f657ce36.png)
 
 2. Buat file prometheus-grafana-compose.yaml
 
    ![image](https://user-images.githubusercontent.com/40049149/191665853-8d15ed53-d142-4adc-997e-24525eed6e97.png)
 
-3. 
+3. Buat file prometheus-grafana.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191684279-6abee90a-bb18-48f5-a7bf-12a2fa7ccd90.png)
 
+4. Jalankan
 
+       sudo ansible-playbook prometheus-grafana.yaml
 
+   ![image](https://user-images.githubusercontent.com/40049149/191684224-c25ceeb9-08e9-478d-afd1-776328e9ebb5.png)
 
 
 
