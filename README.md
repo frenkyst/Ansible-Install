@@ -149,7 +149,6 @@
        sudo ansible-playbook nginx.yaml
 
    ![image](https://user-images.githubusercontent.com/40049149/191571602-dc0d7f7d-babe-4f4e-a619-464b4a81487c.png)
-
    ![image](https://user-images.githubusercontent.com/40049149/191571694-c18cd462-578e-48bf-a850-51bced2b9d10.png)
 
 ## Docker Install
@@ -218,6 +217,8 @@
        sudo ansible-playbook node-exporter.yaml
 
    ![image](https://user-images.githubusercontent.com/40049149/191663213-42ad1f86-678e-4fe5-a0ec-a76f9b2d6813.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191663322-23a08d0f-a044-4b98-b69d-194bf3446ae3.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191663434-713082db-2f00-441e-b174-8723e45ddb45.png)
 
 
 
