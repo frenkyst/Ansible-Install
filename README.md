@@ -242,9 +242,10 @@
    ![image](https://user-images.githubusercontent.com/40049149/191684541-465a8998-d894-4c7f-8245-546a39153b8d.png)
    ![image](https://user-images.githubusercontent.com/40049149/191685014-fe74d30d-2d94-4f9b-975c-ddb7adb72fc2.png)
 
+## Monitoring Container
 
+1. Tambah kan data source __configuration > add data source > prometheus__
 
-
-
+   ![image](https://user-images.githubusercontent.com/40049149/191686254-c3ae7e13-1654-4ff2-9761-8f5c53bf6299.png)
 
 
