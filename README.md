@@ -220,6 +220,19 @@
    ![image](https://user-images.githubusercontent.com/40049149/191663322-23a08d0f-a044-4b98-b69d-194bf3446ae3.png)
    ![image](https://user-images.githubusercontent.com/40049149/191663434-713082db-2f00-441e-b174-8723e45ddb45.png)
 
+## Promotheus & Grafana Install
+
+1. Buat file prometheus.yaml
+
+   ![image](https://user-images.githubusercontent.com/40049149/191665737-02f357ca-8da9-4bfd-bde0-67959e19ceb0.png)
+
+2. Buat file prometheus-grafana-compose.yaml
+
+   ![image](https://user-images.githubusercontent.com/40049149/191665853-8d15ed53-d142-4adc-997e-24525eed6e97.png)
+
+3. 
+
+
 
 
 
