@@ -247,5 +247,6 @@
 1. Tambah kan data source __configuration > add data source > prometheus__
 
    ![image](https://user-images.githubusercontent.com/40049149/191686254-c3ae7e13-1654-4ff2-9761-8f5c53bf6299.png)
+   ![image](https://user-images.githubusercontent.com/40049149/191753368-af870c29-6737-4c1a-b49e-327dade04c00.png)
 
 
